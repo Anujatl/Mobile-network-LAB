@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bck"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="230dp"
+
+        >
+
+        <TextView
+            android:id="@+id/hightxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+        <!--        <TextView-->
+        <!--            android:id="@+id/txtview"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:hint="0"-->
+        <!--            android:textAlignment="textEnd"-->
+        <!--            android:textColor="#454545"-->
+        <!--            android:textSize="64dp" />-->
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtview"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="64dp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:columnCount="4"
+        android:orientation="vertical"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/percent"
+            android:layout_margin="7dp"
+            android:background="@color/black"
+            android:onClick="OnClick"
+            android:text="%"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="7"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="4"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="1"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="0"
+            android:textSize="18dp" />
+
+        <!--        column 2-->
+        <Button
+            android:id="@+id/btnc"
+            android:layout_margin="7dp"
+            android:background="#CFD4D6"
+            android:onClick="OnClick"
+            android:text="C"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="8"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="5"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="2"
+            android:textSize="18dp" />
+        <!--        column 3-->
+        <Button
+            android:id="@+id/bspace"
+            android:layout_margin="7dp"
+            android:background="#CFD4D6"
+            android:onClick="OnClick"
+            android:text="BS"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="9"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="6"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="3"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btndot"
+            android:layout_margin="7dp"
+            android:background="@color/white"
+            android:onClick="OnClick"
+            android:text="."
+            android:textSize="18dp" />
+
+        <!--column 4-->
+        <Button
+            android:id="@+id/btndiv"
+            android:layout_margin="7dp"
+            android:background="#CFD4D6"
+            android:onClick="OnClick"
+            android:text="/"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnmul"
+            android:layout_margin="7dp"
+            android:background="#CFD4D6"
+            android:onClick="OnClick"
+            android:text="X"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnsub"
+            android:layout_margin="7dp"
+            android:background="#CFD4D6"
+            android:onClick="OnClick"
+            android:text="-"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_margin="7dp"
+            android:background="#CFD4D6"
+            android:onClick="OnClick"
+            android:text="+"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btneq"
+            android:layout_margin="7dp"
+            android:background="#0A71DD"
+            android:onClick="OnClick"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="603dp"
+        android:text="CALCULATOR"
+        android:textColor="#958B8B"
+        android:textColorHighlight="#302C2C"
+        android:textColorHint="#E4D1D1"
+        android:textColorLink="#2E2B2B"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
