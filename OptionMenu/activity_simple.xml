@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_margin="20dp"
+tools:context=".simple">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Simple Interest Calculation"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    android:layout_marginTop="40dp"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/principle"
+    android:layout_marginTop="10dp"
+    android:hint="Initial Principle Balance"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/interestrate"
+    android:layout_marginTop="10dp"
+    android:hint="Annual Interest rate"/>
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/time"
+    android:layout_marginTop="10dp"
+    android:hint="Time (in Years)"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Submit" />
+
+<TextView
+    android:id="@+id/result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Loading...."
+    android:textAlignment="center"
+    android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>

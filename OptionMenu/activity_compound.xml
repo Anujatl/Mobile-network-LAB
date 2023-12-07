@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".compound">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compound Interest Calculation"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/C_principle"
+        android:layout_marginTop="10dp"
+        android:hint="Initial Principle Balance"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/C_interestrate"
+        android:layout_marginTop="10dp"
+        android:hint="Annual Interest rate"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/C_time"
+        android:layout_marginTop="10dp"
+        android:hint="Time (in Years)"/>
+
+    <Button
+        android:id="@+id/C_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/C_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Loading...."
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>
